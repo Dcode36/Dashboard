@@ -9,3 +9,5 @@ function handleWidthChange(e) {
 }
 
 mediaQuery.addEventListener('change', handleWidthChange);
+
+
