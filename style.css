@@ -7,8 +7,8 @@
 }
 
 .container {
-    height: 100%;
-    padding: 2% 0;
+    height: 100vh;
+ 
     width: 100%;
     background-color: black;
     display: flex;
@@ -441,7 +441,7 @@ input:checked+.slider:before {
 
 .dp {
     position: absolute;
-    right: 0px;
+    right: 10px;
     top: 10px;
 }
 
@@ -560,7 +560,7 @@ h4 {
 }
 
 @media (max-width : 900px){
-    .alert{
-        display: block;
+    .container{
+        height: 100%;
     }
 }
