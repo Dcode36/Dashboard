@@ -1,0 +1,566 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(255, 255, 255, 0.892);
+
+}
+
+.container {
+    height: 100%;
+    padding: 2% 0;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* common css */
+.box {
+    border-radius: 30px;
+    background-color: rgba(128, 128, 128, 0.435);
+}
+
+/* regular css */
+.dashboard {
+    height: 90%;
+    width: 99%;
+    /* background-color: white; */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.dashboard-left {
+    width: 250px;
+}
+
+.dashboard-mid {
+    width: 400px;
+}
+
+.dashboard-right {
+    width: 400px;
+}
+
+.dashboard-left,
+.dashboard-mid,
+.dashboard-right {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+    gap: 20px;
+
+}
+
+.user,
+.prime {
+    height: 200px;
+}
+
+.name,
+.posi,
+.info {
+    margin: 35px 40px 0 40px;
+
+}
+
+.name {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: rgb(216, 112, 112);
+}
+
+.posi {
+    font-weight: 100;
+    margin: 0 40px;
+}
+
+.info {
+    display: flex;
+    gap: 30px;
+    margin: 20px 45px;
+}
+
+.dash-nav {
+    height: 350px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.dash-nav ul li {
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px 0;
+    font-size: 1em;
+    color: gray;
+}
+
+.dash-nav ul li i {
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.dash-nav ul li:hover,
+.active-icon {
+    color: white !important;
+}
+
+.dash-nav ul li i:hover,
+.active-icon i {
+    background-color: black;
+
+}
+
+.dash-nav ul li i {
+    margin: 0 10px;
+}
+
+.prime {
+    /* padding: 20px; */
+    /* height: 100%; */
+    background-color: blue;
+    position: relative;
+}
+
+.prime p {
+    margin: 10px 30px;
+}
+
+.prime h2 {
+    font-weight: 400;
+    margin: 20px 30px 0 30px;
+}
+
+.prime a {
+    padding: 10px 15px;
+    border-radius: 30px 0 30px 30px;
+    background-color: black;
+    position: absolute;
+    right: 30px;
+    text-decoration: none;
+}
+
+.revenue {
+    height: 150px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+.rev-price{
+    text-align: start;
+}
+.rev-price h4 {
+    font-weight: 500;
+    margin-left: 0px;
+}
+
+.rev-price h3 {
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.doller i {
+    padding: 20px;
+    background-color: black;
+    font-size: 1.4rem;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.white-prog {
+    margin: 10px 0;
+    height: 10px;
+    width: 200px;
+    background-color: white;
+}
+
+.blue-pro {
+    height: 100%;
+    width: 150px;
+    background-color: blue;
+}
+
+.expense {
+    height: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.travel {
+    height: 100%;
+    width: 50%;
+}
+
+.travel h3,
+.travel p,
+h6,
+.profile {
+    margin: 10px 20px;
+    position: relative;
+
+}
+
+.seen {
+    font-size: 13px;
+}
+
+.profile img {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    z-index: 1;
+}
+
+.profile img:nth-child(2) {
+    left: 30px;
+}
+
+.profile img:nth-child(3) {
+    left: 10px;
+}
+
+.profile img:nth-child(4) {
+    left: 20px;
+}
+
+.tag {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.tag p {
+    padding: 5px 10px;
+    background-color: black;
+    border-radius: 30px;
+    font-size: 12px;
+    margin: 5px 10px;
+}
+
+.active-tag {
+    background-color: blue !important;
+}
+
+.slots {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-top: 10px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    height: 10px;
+    width: 40px;
+
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    top: -6px;
+    background-color: blue;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: black;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+.slot-title {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin: 20px;
+}
+
+.date-slot {
+    height: 80%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.date {
+    height: 100px;
+    width: 90px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+
+}
+
+.active-date {
+    background-color: rgb(205, 110, 110) !important;
+}
+
+.client {
+    height: 200px;
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+    position: relative;
+}
+
+.client i {
+    position: absolute;
+    right: 50px;
+    top: 30px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.client h2 {
+    font-weight: 700;
+    margin: 0px 0 12px 0;
+}
+
+.client p {
+    width: 100%;
+    font-size: 12px;
+}
+
+.client img {
+    height: 70%;
+}
+
+.trasition-details {
+    height: 400px;
+    position: relative;
+}
+
+
+
+.detail-data {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+
+.profiles {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 40px;
+    top: 170px;
+    position: relative;
+}
+
+.trasition-details a {
+    position: absolute;
+    right: 40px;
+    bottom: 20px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    background-color: rgb(205, 110, 110);
+}
+
+.profiles i {
+    padding: 10px 14px;
+    background-color: black;
+    font-weight: bold;
+    border-radius: 50%;
+}
+.number{
+    position: absolute;
+    right: 40px;
+    top: 150px;
+
+}
+.number p{
+    color: rgba(249, 244, 244, 0.598);
+}
+.profiles img {
+    height: 40px;
+    object-fit: fill;
+    margin: 10px;
+}
+
+.dp {
+    position: absolute;
+    right: 0px;
+    top: 10px;
+}
+
+.dp img {
+    height: 70px;
+    width: 70%;
+    border-radius: 50%;
+}
+
+.project {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
+}
+
+.project-box {
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+
+.project-box i {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.project-box p,
+h4 {
+    margin: 10px 30px;
+    padding: 2px 0;
+}
+
+.project-box h4 {
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: rgb(216, 112, 112);
+}
+
+.pd-posi {
+    color: rgba(244, 229, 229, 0.65);
+    font-weight: 300;
+
+}
+.perc{
+    position: absolute;
+    right: 0px;
+    bottom:30px;
+    font-size: 12px;
+}
+.progress-bar {
+    height: 8px;
+    width: 80%;
+    background-color: white;
+    /* margin: 0 20px; */
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    border-radius: 30px;
+}
+
+.value {
+    border-radius: 30px;
+    width: 75%;
+    background-color: blue;
+    height: 100%;
+}
+
+.circle {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    /* background-color: blue; */
+    border: 10px solid blue;
+    border-radius: 50%;
+    left: 35px;
+    top: 50px;
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tradiv {
+    height: 90%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.ce{
+    height: 80%;
+    width: 80%;
+    background-color: rgb(205, 110, 110);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.no{
+    font-size: 10px;
+    position: absolute;
+    bottom: 0px;
+    color: gray;
+}
+.alert{
+    display: none;
+}
+
+@media (max-width : 900px){
+    .alert{
+        display: block;
+    }
+}
