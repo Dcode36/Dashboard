@@ -447,7 +447,7 @@ input:checked+.slider:before {
 
 .dp img {
     height: 70px;
-    width: 70%;
+    width: 70px;
     border-radius: 50%;
 }
 
