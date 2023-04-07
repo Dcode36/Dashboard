@@ -7,8 +7,8 @@
 }
 
 .container {
-    height: 100%;
-    padding: 1%;
+    height: 100vh;
+
     width: 100%;
     background-color: black;
     display: flex;
@@ -693,4 +693,3 @@ h4 {
         right: 10px;
     }
 }
-
